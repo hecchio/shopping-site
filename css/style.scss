@@ -470,8 +470,38 @@ footer {
 /* products page
 ------------------------------------------------------------*/
 
+@media (max-width: 768px) {
+    
+    #products_page {
+        
+        .container {
+            padding: 0px;
+            
+            .breadcrumb_list {
+                margin: 0 20px;
+            }
+            
+            .products_container {
+                padding: 20px 20px;
+            }
+            
+            #pupular_item {
+                margin: 0 20px;
+            }
+            
+            #shopping_guide {
+                margin: 0 20px;
+            }
+            
+            #side_menu {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
 .products_container {
-    margin: 10px 0;
+    margin-top: 10px;
     padding: 20px 5px;
     background-color: white;
     
@@ -510,6 +540,7 @@ footer {
           img {
             width: 50px;
             cursor: pointer;
+            margin-right: 2px;
           }
         }
     }
@@ -543,9 +574,9 @@ footer {
                 border: solid 1px $light-gray;
                 padding: 5px;
             
-                span {
-                    font-size: 1.8rem;
-                    color: $dark-gray;
+                input {
+                    margin: 8px;
+                    border: solid 1px $dark-gray;
                 }
             }
         }
@@ -574,11 +605,10 @@ footer {
             }
         }
         
-        .quantity_box {
-            display: inline-block;
+        input {
             border: solid 1px $light-gray;
-            padding: 15px 60px;
             margin-left: 29px;
+            border-radius: 0;
         }
         
         .add_to_cart {
@@ -644,7 +674,7 @@ footer {
             justify-content: space-between;
             
             .products_number {
-                margin-top: 8px;
+                margin-top: 5px;
                 text-align: right;
             }
         }
@@ -697,7 +727,7 @@ footer {
         
         .cart_container_border {
             display: block;
-            margin: 16px 0 35px 0;
+            margin: 10px 0 35px 0;
         }
     }
     

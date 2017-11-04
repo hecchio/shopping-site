@@ -308,8 +308,21 @@ footer {
 
 /* products page
 ------------------------------------------------------------*/
+@media (max-width: 768px) {
+  #products_page .container {
+    padding: 0px; }
+    #products_page .container .breadcrumb_list {
+      margin: 0 20px; }
+    #products_page .container .products_container {
+      padding: 20px 20px; }
+    #products_page .container #pupular_item {
+      margin: 0 20px; }
+    #products_page .container #shopping_guide {
+      margin: 0 20px; }
+    #products_page .container #side_menu {
+      margin: 0 20px; } }
 .products_container {
-  margin: 10px 0;
+  margin-top: 10px;
   padding: 20px 5px;
   background-color: white; }
   .products_container p {
@@ -333,7 +346,8 @@ footer {
       margin-bottom: 0; }
       .products_container ul li img {
         width: 50px;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-right: 2px; }
   .products_container .border2 {
     margin-top: 0;
     margin-bottom: 0; }
@@ -351,9 +365,9 @@ footer {
     .products_container .table_color table td {
       border: solid 1px #e2ddd4;
       padding: 5px; }
-      .products_container .table_color table td span {
-        font-size: 1.8rem;
-        color: #b0b0b0; }
+      .products_container .table_color table td input {
+        margin: 8px;
+        border: solid 1px #b0b0b0; }
   .products_container .cart_container hr {
     margin: 15px 0; }
   .products_container .cart_container p {
@@ -366,11 +380,10 @@ footer {
       color: red;
       font-style: italic;
       font-size: 2em; }
-  .products_container .cart_container .quantity_box {
-    display: inline-block;
+  .products_container .cart_container input {
     border: solid 1px #e2ddd4;
-    padding: 15px 60px;
-    margin-left: 29px; }
+    margin-left: 29px;
+    border-radius: 0; }
   .products_container .cart_container .add_to_cart {
     margin-bottom: 25px; }
   .products_container .cart_container_border {
@@ -407,7 +420,7 @@ footer {
       display: flex;
       justify-content: space-between; }
       .products_container .products_name_number .products_number {
-        margin-top: 8px;
+        margin-top: 5px;
         text-align: right; }
     .products_container .border1 {
       margin-bottom: 30px; }
@@ -434,6 +447,6 @@ footer {
         margin-top: 13px; }
     .products_container .cart_container_border {
       display: block;
-      margin: 16px 0 35px 0; } }
+      margin: 10px 0 35px 0; } }
 
 /*# sourceMappingURL=style.css.map */
